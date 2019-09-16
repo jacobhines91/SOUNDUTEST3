@@ -31,23 +31,23 @@ $(function init() {
 
 //  here's the code for the modal 
  
-//  $(document).ready(function() {
-//     //Fade in delay for the background overlay (control timing here)
-//     $("#bkgOverlay").delay(800).fadeIn(1800);
-//     //Fade in delay for the popup (control timing here)
-//     $("#delayedPopup").delay(800).fadeIn(1800);
+ $(document).ready(function() {
+    //Fade in delay for the background overlay (control timing here)
+    $("#bkgOverlay").delay(800).fadeIn(1800);
+    //Fade in delay for the popup (control timing here)
+    $("#delayedPopup").delay(800).fadeIn(1800);
   
-//     //Hide dialouge and background when the user clicks the close button
-//     $("#btnClose").click(function(e) {
-//       HideDialog();
-//       e.preventDefault();
-//     });
-//   });
-//   //Controls how the modal popup is closed with the close button
-//   function HideDialog() {
-//     $("#bkgOverlay").fadeOut(400);
-//     $("#delayedPopup").fadeOut(300);
-//   } 
+    //Hide dialouge and background when the user clicks the close button
+    $("#btnClose").click(function(e) {
+      HideDialog();
+      e.preventDefault();
+    });
+  });
+  //Controls how the modal popup is closed with the close button
+  function HideDialog() {
+    $("#bkgOverlay").fadeOut(400);
+    $("#delayedPopup").fadeOut(300);
+  } 
 
 
 //   // 4. The API will call this function when the video player is ready.
